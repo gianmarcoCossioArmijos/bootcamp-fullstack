@@ -1,0 +1,11 @@
+OPENGRAPH:
+https://developers.facebook.com/docs/sharing/webmasters/
+
+TWITTER CARDS:
+https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary
+
+GUIA:
+https://htmlhead.dev/
+
+LINKEDIN:
+https://www.linkedin.com/help/linkedin/answer/a521928/make-your-website-shareable-on-linkedin?lang=en

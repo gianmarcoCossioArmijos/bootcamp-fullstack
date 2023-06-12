@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrar 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<style>
+    .container{
+        margin: auto;
+        min-height: 100vh;
+        width: 560px;
+    }
+
+    .container div{
+        display: flex;
+        gap: 30px;
+    }
+</style>
+<body>
+
+    <main class="container">
+
+        <hgroup>
+            <img src="https://placehold.co/80.png?text={vv}" />
+            <h1>Crea una cuenta</h1>
+            <h2>Ingresa la siguiente informacion para registrarte</h2>
+        </hgroup>
+
+        <div class="nombres">
+
+        <label>Names
+            <input type="text" minlength="5" placeholder="Victor" required>
+        </label>
+        
+        <label>Apellidos
+            <input type="text" minlength="5" placeholder="Villazon" required>
+        </label>
+
+        </div>
+
+        <label>Edad
+            <input type="number" placeholder="Ej: 19" required>
+        </label>
+
+        <label>Fecha de nacimiento
+            <input type="date" required>
+        </label>
+
+        <label>Genero
+            <select name="generos">
+                <option value="m">Masculino</option>
+                <option value="f">Femenino</option>
+                <option value="lgtbq">LGTBQ</option>
+            </select>
+        </label>
+
+        <label>
+            <input type="email" placeholder="Email: Ej. user@gmail.com" minlength="6" required>
+        </label>
+
+        <label>Direccion
+            <input type="text" minlength="10" placeholder="Direccion" minlength="10" required>
+        </label>
+
+        <label>
+            <input type="text" minlength="10" placeholder="Direccion linea 2" minlength="10" required>
+        </label>
+
+        <label>Telefono
+            <input type="tel" placeholder="Numero de telefono" minlength="7" required>
+        </label>
+
+        <label>Codigo postal
+            <input type="number" placeholder="Ej: 14001" minlength="2" required>
+        </label>
+
+        <label>Ciudad
+            <input type="text" placeholder="Ej: Chiclayo" required>
+        </label>
+
+        <label>Subir firma
+            <input type="file" accept=".pdf, .jpeg, .png, .jpg">
+        </label>
+
+        <Label>
+            <input type="checkbox" name="politicas">
+            Acepto los terminos, condiciones y politicas
+        </Label>
+
+        <input type="submit" value="Registrarse">
+
+        <p>Ya tienes una cuenta?<a>Accede desde aqui</a></p>
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Formularios + Inputs + Validaciones</h1>
+
+        <form>
+
+            <h2>Inputs</h2>
+
+            <label for="text1" >Input tipo texto</label>
+            <input type="text" placeholder="Ingrese texto" id="text1">
+
+            <label for="text2" >Input desactivado</label>
+            <input type="text" placeholder="Ingrese texto" disabled id="text2">
+
+            <label for="text3" >Input solo para lectura</label>
+            <input type="text" placeholder="Input de solo lectura" readonly value="Solo lectura" id="text3">
+        
+            <label for="text4">Input tipo numero</label>
+            <input type="number" placeholder="Edad ejemplo 18" id="text4">
+
+            <label for="text5">Input para email</label>
+            <input type="email" placeholder="ejemolo@example" id="text5">
+
+            <label for="text6">Input de range</label>
+            <input type="range" id="text6">
+
+            <label for="text7">Input para telefono</label>
+            <input type="tel" placeholder="9999999" id="text7">
+
+            <label for="text7">Fomato de telefono u otros (link)</label>
+            <input type="tel" readonly value="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions" id="text7">
+
+            <label for="text8">Input tipo password</label>
+            <input type="password" id="text8">
+
+            <label for="text9">Input de color</label>
+            <input type="color" id="text9">
+
+            <label for="text10">Input tipo url</label>
+            <input type="url" id="text10" placeholder="Sitio Web">
+
+            <label for="text11">Input tipo search</label>
+            <input type="search" id="text11" placeholder="Buscar...">
+
+            <label for="text12">Input para seleccionar archivo</label>
+            <input type="file" id="text12">
+
+            <label for="text13" >Input para seleccionar archivos de un tipo determinado</label>
+            <input type="file" id="text13" accept=".jpg, .jpeg, .png">
+
+            <label for="text14">Input para seleccionar multiples archivos de un tipo determinado</label>
+            <input type="file" id="text14" accept=".jpg, .jpeg, .png" multiple>
+        
+            <label for="text15">Link de documentacion HTML tipo de archivos</label>
+            <input type="text" placeholder="Input de solo lectura" readonly value="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#unique_file_type_specifiers" id="text15">
+        
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+
+        </form>
+
+        <form>
+
+            <h2>Inputs Fecha</h2>
+
+            <label for="text16" >Input tipo Datetime Local (Fecha y Hora)</label>
+            <input type="datetime-local" id="text16">
+
+            <label for="text17" >Input tipo Date (dia)</label>
+            <input type="date" id="text17">
+
+            <label for="text18" >Input tipo Week (semana)</label>
+            <input type="week" id="text18">
+
+            <label for="text19" >Input tipo Moth (mes)</label>
+            <input type="month" id="text19">
+
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+
+        </form>
+
+        <form>
+
+            <h2>Text Areas</h2>
+
+            <label for="text20">Text Area</label>
+            <textarea id="text20" rows="3">
+                Escriba un texto aqui...
+            </textarea>
+
+            <label for="text21">Text Area desactivada</label>
+            <textarea id="text21" rows="3" disabled>
+                Escriba un texto aqui...
+            </textarea>
+
+        </form>
+
+        <form>
+
+            <h2>Selects</h2>
+
+            <select name="comidas">
+                <option value="">Selecciona tu comida favorita...</option>
+                <option value="pe" >Peruana</option>
+                <option value="jp" >Japonesa</option>
+                <option value="fr" >Francesa</option>
+                <option value="ch" >China</option>
+                <option value="es" >Española</option>
+            </select>
+
+            <input type="submit" value="SUBMIT">
+
+        </form>
+
+        <form>
+
+            <h2>Checkboxes</h2>
+
+            <h3>Lenguaje de Preferencia</h3>
+
+            <Label>English
+            <input type="checkbox" name="english" id="chk1">
+            </Label>
+
+            <Label>Español
+            <input type="checkbox" name="español" id="chk2" checked>
+            </Label>
+
+            <Label>Koreano
+            <input type="checkbox" name="koreano" id="chk3" disabled>
+            </Label>
+
+            <input type="submit" value="GUARDAR">
+
+        </form>
+
+        <form>
+
+            <h2>Radio buttons</h2>
+
+            <label>Español
+                <input type="radio" name="idioma" value="es" checked>
+            </label>
+
+            <label>Ingles
+                <input type="radio" name="idioma" value="en">
+            </label>
+
+            <label>Portugues
+                <input type="radio" name="idioma" value="pr">
+            </label>
+
+            <label>Neerlandes
+                <input type="radio" name="idioma" value="ne">
+            </label>
+
+            <input type="submit" value="GUARDAR">
+
+        </form>
+
+    </main>
+    
+</body>
+</html>

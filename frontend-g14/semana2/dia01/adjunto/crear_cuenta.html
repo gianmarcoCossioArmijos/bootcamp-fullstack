@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<style>
+    .container{
+        margin: auto;
+        min-height: 100vh;
+        width: 560px;
+    }
+
+    .container div{
+        display: flex;
+        gap: 30px;
+    }
+</style>
+<body>
+
+    <main class="container">
+
+        <hgroup>
+            <img src="https://placehold.co/80.png?text={vv}" />
+            <h1>Crea una cuenta</h1>
+            <h2>Ingresa la siguiente informacion para registrarte</h2>
+        </hgroup>
+
+        <div class="nombres">
+
+        <label>
+            <input type="text" minlength="5" placeholder="Nombres" required>
+        </label>
+        
+        <label>
+            <input type="text" minlength="5" placeholder="Apellidos" required>
+        </label>
+
+        </div>
+
+        <label>
+            <input type="email" placeholder="Email: Ej. user@gmail.com" minlength="6" required>
+        </label>
+
+        <label>
+            <input type="tel" placeholder="Telefono" minlength="7" required>
+        </label>
+
+        <label>
+            <input type="password" placeholder="Password" minlength="6" required>
+        </label>
+
+        <label>
+            <input type="password" placeholder="Confirm Password" minlength="6" required>
+        </label>
+
+        <input type="submit" value="Registrarse">
+
+        <p>Ya tienes una cuenta?<a>Accede desde aqui</a></p>
+
+    </main>
+    
+</body>
+</html>
