@@ -145,6 +145,7 @@ input:not(:focus) {
 .hero__wrapper input[type=submit]:hover {
     background-color: hsl(224, 100%, 75%);
     cursor: pointer;
+    transition: 300ms;
 }
 
 @media (max-width: 375px) {
@@ -238,6 +239,7 @@ input:not(:focus) {
 
 .information__descrption a:hover {
     color: hsl(224, 100%, 75%);
+    transition: 300ms;
 }
 
 .information__testimony {
@@ -372,6 +374,7 @@ input:not(:focus) {
 .contact form input[type=submit]:hover {
     background-color: hsl(224, 100%, 75%);
     cursor: pointer;
+    transition: 300ms;
 }
 
 @media (max-width: 375px) {
@@ -434,6 +437,7 @@ input:not(:focus) {
 
 .footer__info__links1 a:hover {
     color: hsl(224, 100%, 75%);
+    transition: 300ms;
 }
 
 .footer__info__links2 {
@@ -444,6 +448,7 @@ input:not(:focus) {
 
 .footer__info__links2 a:hover {
     color: hsl(224, 100%, 75%);
+    transition: 300ms;
 }
 
 .footer__info__socialmedia {
@@ -469,6 +474,7 @@ input:not(:focus) {
     fill: hsl(224, 100%, 75%);
     cursor: pointer;
     border: 1px solid hsl(224, 100%, 75%);
+    transition: 300ms;
 }
 
 @media (max-width: 375px) {
