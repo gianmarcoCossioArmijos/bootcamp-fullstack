@@ -1,0 +1,102 @@
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2em 0;
+    background: url(../imagenes/fondo_bw.png) no-repeat center;
+    background-size: contain;
+
+    &__name {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &__name h3:nth-child(2) {
+        color: $primary-purple;
+        text-transform: uppercase;
+    }
+
+    &__position {
+        font-family: $typography-secondary;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    &__article h1 {
+        font-weight: $typography-semibold;
+        font-size: $font-size-medium;
+    }
+
+    &__photo {
+        width: $photo-size;
+        height: $photo-size;
+        flex-shrink: $photo-shrink;
+        border-radius: $photo-border-radius;
+
+        object-fit: cover;
+        margin: auto;
+        filter: grayscale(100%);
+    }
+
+    &__stack {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    &__stack-hability {
+        gap: 0.5rem;
+        width: 5rem;
+        padding: 1rem;
+        align-self: center;
+
+        background-color: $primary-black-1;
+        border-radius: $border-radius-hability;
+        border: $border-hability;
+    }
+
+    &__about {
+        background-color: $primary-black-1;
+        border: $border-hability;
+
+        border-radius: 30px;
+        margin: 8rem 3rem 0 3rem;
+        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    &__about img {
+        width: $photo-size;
+        height: auto;
+    }
+
+    &__about p {
+        margin: auto;
+    }
+}
+
+@media (max-width: 846px) {
+    .hero__about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .hero__about img {
+        margin: auto;
+    }
+}

@@ -1,0 +1,24 @@
+
+@mixin default-font {
+    font-family: monospace;
+}
+
+@mixin border-radius($valor) {
+    border-radius: $valor;
+}
+
+@mixin title($is-uppercase:true) {
+    @if $is-uppercase {
+        text-transform: uppercase;
+    } @else {
+        text-transform: lowercase;
+    }
+}
+
+@import 'variables';
+@import 'card';
+
+body {
+    background-color: $color-background;
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__title h4 {
+        font-family: $typography-secondary;
+        background-color: $primary-black-1;
+        border-radius: $border-radius-hability;
+        border: $border-hability;
+        color: $primary-purple;
+
+        width: fit-content;
+        padding: 0.4rem 2rem;
+        margin: auto;
+    }
+
+    &__title h2 {
+        font-family: $typography-secondary;
+        font-weight: $typography-semibold;
+        font-size: $font-size-medium;
+        padding: 1rem 0 0 0;
+        margin: auto;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &__card {
+        border: $border-hability;
+
+        border-radius: 30px;
+        display: grid;
+        grid-template-rows: 350px 110px;
+        max-width: 350px;
+    }
+
+    &__card-text {
+        background-color: $primary-black-1;
+
+        border-radius: 0 0 30px 30px;
+        padding: 1rem;
+        font-size: 14px;
+    }
+
+    &__card-text h3 {
+        font-family: $typography-secondary;
+        color: $primary-purple;
+    }
+
+    &__card-text span {
+        font-size: 13px;
+        color: grey;
+    }
+
+    &__card-image {
+        filter: grayscale(100%);
+    }
+
+    &__card-image img {
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__card-image:hover {
+        filter: grayscale(0);
+        transition: 400ms;
+    }
+}

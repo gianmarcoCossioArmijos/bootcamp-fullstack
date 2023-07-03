@@ -1,0 +1,30 @@
+
+.nav {
+    font-family: $typography-secondary;
+    font-size: $font-size-xsmall;
+    font-weight: $typography-light;
+    border: $border-hability;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+
+    &__logo {
+        width: $logo-size;
+        height: $logo-size;
+    }
+
+    &__sections ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    &__sections li:hover {
+        color: $primary-purple;
+        font-weight: $typography-regular;
+        transition: 300ms;
+    }
+}

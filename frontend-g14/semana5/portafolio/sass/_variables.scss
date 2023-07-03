@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Play:wght@400;700&display=swap');
+
+//LOGO
+$logo-size: 30px;
+
+//FONT
+$typography: 'IBM Plex Mono', monospace;
+$typography-secondary: 'Play', sans-serif;
+$typography-light: 300;
+$typography-regular: 400;
+$typography-semibold: 600;
+$font-size-xsmall: 16px;
+$font-size-small: 24px;
+$font-size-medium: 32px;
+$font-size-large: 40px;
+
+//COLOR
+$primary-purple: #9336B4;
+$primary-black-1: #010101;
+$primary-black-2: #0c0c0c;
+$primary-white: #FFFFFF;
+
+//FOTO
+$photo-size: 300px;
+$photo-border-radius: 20%;
+$photo-shrink: 0;
+
+//BORDERS
+$border-radius-hability: 15px;
+$border-hability: 1px solid white;
+
+//SVG
+$svg-size: 80px;
+$svg-padding: 2rem;

@@ -1,0 +1,24 @@
+.card {
+  background-color: #FFF;
+  border: 1px solid #8c7c65;
+  font-family: monospace;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.card .success {
+  background-color: rgb(146, 203, 31);
+}
+.card__body {
+  padding: 1rem 1.5rem;
+}
+.card__header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #8c7c65;
+}
+
+body {
+  background-color: #FDCEDF;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

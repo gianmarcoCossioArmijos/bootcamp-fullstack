@@ -1,0 +1,123 @@
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 270px 0;
+
+    &__text {
+        width: 50%;
+        padding: 3rem;
+    }
+
+    &__text h4 {
+        font-family: $typography-secondary;
+        background-color: $primary-black-1;
+        border-radius: 15px;
+        border: $border-hability;
+        color: $primary-purple;
+
+        width: fit-content;
+        padding: 0.4rem 2rem;
+    }
+
+    &__text h2 {
+        font-family: $typography-secondary;
+        font-weight: $typography-semibold;
+        font-size: $font-size-large;
+        padding: 1rem 0;
+    }
+
+    &__text p {
+        padding: 1rem 0; 
+    }
+    
+    &__text span {
+        padding: 1rem 0; 
+    }
+
+    &__text a {
+        color: $primary-purple;
+        font-weight: $typography-semibold;
+    }
+
+    &__stack {
+        width: 50%;
+        padding: 3rem 0;
+        display: grid;
+        gap: 0.5rem;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns:  repeat(5, 80px);
+        grid-template-rows: repeat(3, 80px);
+        grid-template-areas: '. . git . .'
+                        '. html js css .'
+                        'java spring sass hibernate mysql';
+    }
+
+    &__stack img {
+        border-radius: $border-radius-hability;
+        background-color: $primary-purple;
+        width: $svg-size;
+        border: $border-hability;
+
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    &__stack-html {
+        grid-area: html;
+    }
+    
+    &__stack-css {
+        grid-area: css;
+    }
+
+    &__stack-sass {
+        grid-area: sass;
+    }
+
+    &__stack-java {
+        grid-area: java;
+    }
+
+    &__stack-spring{
+        grid-area: spring;
+    }
+
+    &__stack-hibernate {
+        grid-area: hibernate;
+    }
+
+    &__stack-mysql {
+        grid-area: mysql;
+    }
+
+    &__stack-git {
+        grid-area: git;
+    }
+
+    &__stack-js {
+        grid-area: js;
+    }
+}
+
+@media (max-width: 920px) {
+    .skills {
+        display: flex;
+        flex-direction: column;
+
+        &__text {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__text h4 {
+            margin: auto;
+        }
+
+        &__stack {
+            width: 100%;
+        }
+    }
+}
