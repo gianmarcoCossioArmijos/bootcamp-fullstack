@@ -43,19 +43,19 @@
 
         object-fit: cover;
         margin: auto;
-        filter: grayscale(100%);
     }
 
-    &__stack {
+    &__stacks {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-content: center;
         gap: 1.5rem;
         text-align: center;
     }
 
-    &__stack-hability {
+    &__stack {
         gap: 0.5rem;
         width: 5rem;
         padding: 1rem;

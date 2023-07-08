@@ -7,7 +7,13 @@
     background: url(../imagenes/fondo_bw.png) no-repeat bottom;
     background-size: contain;
 
-    img, span {
+    img {
+        margin: auto;
+        width: $logo-size;
+        height: $logo-size;
+    }
+
+    span {
         margin: auto;
     }
 }

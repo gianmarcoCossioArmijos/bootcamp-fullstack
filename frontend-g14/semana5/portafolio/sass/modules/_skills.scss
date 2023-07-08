@@ -65,6 +65,16 @@
         height: auto;
     }
 
+    &__stack svg {
+        border-radius: $border-radius-hability;
+        background-color: $primary-purple;
+        width: $svg-size;
+        border: $border-hability;
+
+        padding: 0.5rem;
+        height: auto;
+    }
+
     &__stack-html {
         grid-area: html;
     }

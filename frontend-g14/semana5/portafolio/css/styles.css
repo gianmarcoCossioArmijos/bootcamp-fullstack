@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Play:wght@400;700&display=swap");
-.nav {
+.header {
   font-family: "Play", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -12,19 +12,27 @@
   justify-content: space-between;
   padding: 1rem;
 }
-.nav__logo {
+.header__logo {
   width: 30px;
   height: 30px;
 }
-.nav__sections ul {
+.header__sections {
+  margin: auto;
+}
+.header__links button {
+  background-color: #0c0c0c;
+  border: none;
+}
+.header__sections ul {
+  padding: 0;
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
 }
-.nav__sections li:hover {
+.header__sections li:hover {
   color: #9336B4;
   font-weight: 400;
-  transition: 300ms;
+  transition: color ease 300ms;
 }
 
 .hero {
@@ -65,17 +73,17 @@
   border-radius: 20%;
   object-fit: cover;
   margin: auto;
-  filter: grayscale(100%);
 }
-.hero__stack {
+.hero__stacks {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   gap: 1.5rem;
   text-align: center;
 }
-.hero__stack-hability {
+.hero__stack {
   gap: 0.5rem;
   width: 5rem;
   padding: 1rem;
@@ -167,6 +175,14 @@
   padding: 0.5rem;
   height: auto;
 }
+.skills__stack svg {
+  border-radius: 15px;
+  background-color: #9336B4;
+  width: 80px;
+  border: 1px solid white;
+  padding: 0.5rem;
+  height: auto;
+}
 .skills__stack-html {
   grid-area: html;
 }
@@ -237,6 +253,17 @@
   padding: 1rem 0 0 0;
   margin: auto;
 }
+.projects__nav {
+  margin: auto;
+  display: flex;
+  flex: row;
+  gap: 2rem;
+}
+.projects__nav a:hover {
+  color: #9336B4;
+  font-weight: 600;
+  transition: color ease 400ms;
+}
 .projects__cards {
   display: flex;
   flex-direction: row;
@@ -265,18 +292,16 @@
   font-size: 13px;
   color: grey;
 }
-.projects__card-image {
-  filter: grayscale(100%);
-}
-.projects__card-image img {
+.projects img {
   border-radius: 30px 30px 0 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.projects__card-image:hover {
-  filter: grayscale(0);
-  transition: 400ms;
+.projects img:hover {
+  filter: grayscale(100%);
+  transition: ease 400ms;
+  transition-timing-function: ease-in-out;
 }
 
 .footer {
@@ -287,7 +312,12 @@
   background: url(../imagenes/fondo_bw.png) no-repeat bottom;
   background-size: contain;
 }
-.footer img, .footer span {
+.footer img {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
+.footer span {
   margin: auto;
 }
 
