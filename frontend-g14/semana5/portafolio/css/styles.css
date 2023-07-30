@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almendra+Display&family=Flamenco:wght@300;400&display=swap");
+@font-face {
+  font-family: "futurespore";
+  src: url("/fonts/Porto Qastelo.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 .header {
-  font-family: "Play", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   border: 1px solid white;
   border-radius: 20px;
   display: flex;
@@ -31,7 +38,7 @@
 }
 .header__sections li:hover {
   color: #9336B4;
-  font-weight: 400;
+  font-weight: 300;
   transition: color ease 300ms;
 }
 
@@ -51,10 +58,9 @@
 }
 .hero__name h3:nth-child(2) {
   color: #9336B4;
-  text-transform: uppercase;
 }
 .hero__position {
-  font-family: "Play", sans-serif;
+  font-family: "futurespore";
 }
 .hero__article {
   display: flex;
@@ -63,16 +69,26 @@
   gap: 0.5rem;
 }
 .hero__article h1 {
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 300;
+  font-size: 40px;
 }
 .hero__photo {
   width: 300px;
   height: 300px;
   flex-shrink: 0;
   border-radius: 20%;
+  background: rgb(12, 12, 12);
+  border: 1px solid white;
+  filter: grayscale(100%);
   object-fit: cover;
   margin: auto;
+}
+.hero__photo:hover {
+  background: radial-gradient(circle, rgb(12, 12, 12) 47%, rgb(37, 20, 43) 66%, rgb(59, 27, 70) 84%, rgb(147, 54, 180) 100%);
+  filter: grayscale(30%);
+  transition: 1.1s ease-in-out;
+  transform: scale(1.05);
+  overflow: hidden;
 }
 .hero__stacks {
   display: flex;
@@ -132,7 +148,7 @@
   padding: 3rem;
 }
 .skills__text h4 {
-  font-family: "Play", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   background-color: #010101;
   border-radius: 15px;
   border: 1px solid white;
@@ -141,7 +157,7 @@
   padding: 0.4rem 2rem;
 }
 .skills__text h2 {
-  font-family: "Play", sans-serif;
+  font-family: "futurespore";
   font-weight: 600;
   font-size: 40px;
   padding: 1rem 0;
@@ -237,7 +253,7 @@
   text-align: center;
 }
 .projects__title h4 {
-  font-family: "Play", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   background-color: #010101;
   border-radius: 15px;
   border: 1px solid white;
@@ -247,7 +263,7 @@
   margin: auto;
 }
 .projects__title h2 {
-  font-family: "Play", sans-serif;
+  font-family: "futurespore";
   font-weight: 600;
   font-size: 32px;
   padding: 1rem 0 0 0;
@@ -313,7 +329,7 @@
   height: 40px;
 }
 .projects__card-text h3 {
-  font-family: "Play", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   color: #9336B4;
 }
 .projects__card-text span {

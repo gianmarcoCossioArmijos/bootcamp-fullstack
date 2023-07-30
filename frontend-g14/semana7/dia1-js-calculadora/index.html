@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <main class="w-80 bg-orange-100 text-center my-0 mx-auto mt-5 p-5 rounded-md">
+
+        <h1>Calculadora</h1>
+
+        <section class="flex flex-col gap-3">
+            <input class="display border p-1 text-right text-xl" type="text" value="0" readonly>
+
+            <div grid grid-cols-3 gap-2>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">+</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">-</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">*</button>
+
+                <button lass="bg-red-300 p-2 hover:bg-red-400">7</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">8</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">9</button>
+
+                <button lass="bg-red-300 p-2 hover:bg-red-400">4</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">5</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">6</button>
+
+                <button lass="bg-red-300 p-2 hover:bg-red-400">1</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">2</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">3</button>
+
+                <button lass="bg-red-300 p-2 hover:bg-red-400">0</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">AC</button>
+                <button lass="bg-red-300 p-2 hover:bg-red-400">=</button>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,8 +1,8 @@
 
 .header {
-    font-family: $typography-secondary;
+    font-family: $typography;
     font-size: $font-size-xsmall;
-    font-weight: $typography-light;
+    font-weight: $typography-regular;
     border: $border-hability;
     border-radius: 20px;
 
@@ -34,7 +34,7 @@
 
     &__sections li:hover {
         color: $primary-purple;
-        font-weight: $typography-regular;
+        font-weight: $typography-light;
         transition: color ease 300ms;
     }
 }

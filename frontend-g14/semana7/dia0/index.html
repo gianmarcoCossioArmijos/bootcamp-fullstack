@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>Header</header>
+    <main>
+
+        <button class="btn1">Saludar</button>
+        <button class="btn2">Despedir</button>
+        <a class="link" href="">Saludar</a>
+        
+        <form action="">
+            <input type="text" name="" id="">
+            <input type="submit" name="" id="">
+        </form>
+
+        <ul id="lista">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+    </main>
+    <footer>Footer</footer>
+    
+    <script>
+
+        function saludar() {
+            alert("Hola!");
+        }
+
+        const boton1 = document.querySelector(".btn1");
+        boton1.addEventListener("click", saludar);
+
+        const boton2 = document.querySelector(".btn2");
+        boton2.addEventListener("click", function (event) {
+            console.log(event.target);
+        });
+
+        const link = document.querySelector(".link");
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+        });
+
+        const formulario = document.querySelector("form");
+        formulario.addEventListener("submit", function (event) {
+            event.preventDefault();
+            console.log("prevent!");
+        });
+
+    </script>
+</body>
+</html>

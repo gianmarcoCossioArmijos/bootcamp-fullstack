@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas CRUD Json-server</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<style>
+    .fs-small {
+        font-size: 0.8rem;
+    }
+</style>
+<body>
+
+    <nav class="container-fluid">
+       <ul>
+            <li>
+                <strong>Listado de Peliculas</strong>
+            </li>
+       </ul>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="grid">
+            <div>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Imge</th>
+                            <th>Name</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class="movies__list">
+                                
+                    </tbody>
+    
+                </table>
+            </div>
+            <div>
+                <form action="" id="moviesForm">
+                    <h3>New Movie</h3>
+
+                    <input type="text" name="id">
+                    <input type="text" name="name" placeholder="Ingresa el nombre" required>
+                    <input type="text" name="image" placeholder="Ingresa link de imagen" required>
+                    <input type="date" name="release" required>
+                    <select name="genre" required>
+                        <option value="0">Select a genre...</option>
+                        <option value="1">Comedy</option>
+                        <option value="2">Action</option>
+                        <option value="3">Animation</option>
+                        <option value="4">Adventure</option>
+                    </select>
+                    <textarea name="resumen" placeholder="Resumen..."></textarea>
+                    
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="container-fluid">
+        Gianmarco Cossio - 2023
+    </footer>
+    
+<script src="./main.js" type="module"></script>
+</body>
+</html>

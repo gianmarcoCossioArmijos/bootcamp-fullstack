@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.3"
+  },
+  "name": "dia3-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
