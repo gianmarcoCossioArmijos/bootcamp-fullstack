@@ -108,7 +108,7 @@ function renderTrivia(pregunta) {
                             focus:ring-red-100 focus:ring-red-400">
 
                             <span class="relative px-5 py-4 w-full transition-all ease-in duration-75
-                                    bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                                    bg-white bg-gray-900 rounded-md group-hover:bg-opacity-0"
                                     id="trivia__spans"
                                     data-opcion="${pregunta.opcion1}">
                                 ${pregunta.opcion1}
@@ -123,7 +123,7 @@ function renderTrivia(pregunta) {
                             focus:ring-red-100 focus:ring-red-400">
 
                         <span class="relative px-5 py-4 w-full transition-all ease-in duration-75
-                                bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                                bg-white bg-gray-900 rounded-md group-hover:bg-opacity-0"
                                 id="trivia__spans"
                                 data-opcion="${pregunta.opcion2}">
                             ${pregunta.opcion2}
@@ -138,7 +138,7 @@ function renderTrivia(pregunta) {
                             focus:ring-red-100 focus:ring-red-400">
 
                         <span class="relative px-5 py-4 w-full transition-all ease-in duration-75
-                                bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                                bg-white bg-gray-900 rounded-md group-hover:bg-opacity-0"
                                 id="trivia__spans"
                                 data-opcion="${pregunta.opcion3}">
                             ${pregunta.opcion3}
