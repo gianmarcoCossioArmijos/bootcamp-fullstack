@@ -1,0 +1,17 @@
+.app {
+  width: 400px;
+  height: 400px;
+  border: 2px solid white;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0.5rem 0.5rem 0.1rem;
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+.app h2 {
+  height: 5rem;
+}
