@@ -65,8 +65,8 @@ function renderTrivia(pregunta) {
                             ${mensajePuntuacion}
                         </p>
 
-                        <button class="text-gray-900 bg-yellow-300 hover:bg-yellow-200 font-medium
-                                rounded-lg text-sm px-5 py-3 text-center mt-7 mb-3"
+                        <button class="text-gray-900 bg-yellow-300 hover:bg-yellow-400 font-medium
+                                rounded-lg text-sm px-5 py-3 text-center mt-7 mb-3 px-5 py-4"
                                 id="boton__volverJugar">
                             Volver a jugar
                         </button>
@@ -100,47 +100,38 @@ function renderTrivia(pregunta) {
 
                 <div class="flex flex-col gap-2 items-start">
 
-                    <button class="relative inline-flex items-center justify-center p-0.5
+                    <button class="relative inline-flex items-center justify-center px-5 py-4
                             mb-2 w-full overflow-hidden text-sm font-medium rounded-lg
-                            group bg-gradient-to-br from-red-300 via-red-400 to-yellow-300
-                            group-hover:from-red-300 group-hover:via-red-400 group-hover:to-yellow-300
-                            text-white hover:text-gray-900 focus:ring-4 focus:outline-none
-                            focus:ring-red-100 focus:ring-red-400">
+                            bg-yellow-400 hover:bg-yellow-500
+                            text-black focus:ring-4 focus:outline-none
+                            focus:ring-red-100 focus:ring-red-400"
+                            id="trivia__spans"
+                            data-opcion="${pregunta.opcion1}">
 
-                            <span class="relative px-5 py-4 w-full transition-all ease-in duration-75
-                                    bg-white bg-gray-900 rounded-md group-hover:bg-opacity-0"
-                                    id="trivia__spans"
-                                    data-opcion="${pregunta.opcion1}">
                                 ${pregunta.opcion1}
                             </span>
                     </button>
 
-                    <button class="relative inline-flex items-center justify-center p-0.5
+                    <button class="relative inline-flex items-center justify-center px-5 py-4
                             mb-2 w-full overflow-hidden text-sm font-medium rounded-lg
-                            group bg-gradient-to-br from-red-300 via-red-400 to-yellow-300
-                            group-hover:from-red-300 group-hover:via-red-400 group-hover:to-yellow-300
-                            text-white hover:text-gray-900 focus:ring-4 focus:outline-none
-                            focus:ring-red-100 focus:ring-red-400">
+                            bg-yellow-400 hover:bg-yellow-500
+                            text-black focus:ring-4 focus:outline-none
+                            focus:ring-red-100 focus:ring-red-400"
+                            id="trivia__spans"
+                            data-opcion="${pregunta.opcion2}">
 
-                        <span class="relative px-5 py-4 w-full transition-all ease-in duration-75
-                                bg-white bg-gray-900 rounded-md group-hover:bg-opacity-0"
-                                id="trivia__spans"
-                                data-opcion="${pregunta.opcion2}">
                             ${pregunta.opcion2}
                         </span>
                     </button>
 
-                    <button class="relative inline-flex items-center justify-center p-0.5
+                    <button class="relative inline-flex items-center justify-center px-5 py-4
                             mb-2 w-full overflow-hidden text-sm font-medium rounded-lg
-                            group bg-gradient-to-br from-red-300 via-red-400 to-yellow-300
-                            group-hover:from-red-300 group-hover:via-red-400 group-hover:to-yellow-300
-                            text-white hover:text-gray-900 focus:ring-4 focus:outline-none
-                            focus:ring-red-100 focus:ring-red-400">
+                            bg-yellow-400 hover:bg-yellow-500
+                            text-black focus:ring-4 focus:outline-none
+                            focus:ring-red-100 focus:ring-red-400"
+                            id="trivia__spans"
+                            data-opcion="${pregunta.opcion3}">
 
-                        <span class="relative px-5 py-4 w-full transition-all ease-in duration-75
-                                bg-white bg-gray-900 rounded-md group-hover:bg-opacity-0"
-                                id="trivia__spans"
-                                data-opcion="${pregunta.opcion3}">
                             ${pregunta.opcion3}
                         </span>
                     </button>
