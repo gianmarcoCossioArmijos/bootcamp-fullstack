@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import { useHero } from '../hooks/useHero'
+import { useHero } from '../hooks/useHero.js'
 
 const Home = () => {
   const [heroes, setHeroes] = useState([]);
