@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Play:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Almendra+Display&family=Flamenco:wght@300;400&display=swap");
 @font-face {
   font-family: "futurespore";
   src: url("/fonts/Porto Qastelo.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
-
 .header {
   font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
@@ -20,28 +19,23 @@
   justify-content: space-between;
   padding: 1rem;
 }
-
 .header__logo {
   width: 30px;
   height: 30px;
 }
-
 .header__sections {
   margin: auto;
 }
-
 .header__links button {
   background-color: #0c0c0c;
   border: none;
 }
-
 .header__sections ul {
   padding: 0;
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
 }
-
 .header__sections li:hover {
   color: #9336B4;
   font-weight: 300;
@@ -57,7 +51,6 @@
   background: url(../imagenes/fondo_bw.png) no-repeat center;
   background-size: contain;
 }
-
 .hero__name {
   display: flex;
   justify-content: center;
@@ -69,19 +62,16 @@
 .hero__position {
   font-family: "futurespore";
 }
-
 .hero__article {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 0.5rem;
 }
-
 .hero__article h1 {
   font-weight: 300;
   font-size: 40px;
 }
-
 .hero__photo {
   width: 300px;
   height: 300px;
@@ -93,7 +83,6 @@
   object-fit: cover;
   margin: auto;
 }
-
 .hero__photo:hover {
   background: radial-gradient(circle, rgb(12, 12, 12) 47%, rgb(37, 20, 43) 66%, rgb(59, 27, 70) 84%, rgb(147, 54, 180) 100%);
   filter: grayscale(30%);
@@ -101,7 +90,6 @@
   transform: scale(1.05);
   overflow: hidden;
 }
-
 .hero__stacks {
   display: flex;
   flex-direction: row;
@@ -111,22 +99,15 @@
   gap: 1.5rem;
   text-align: center;
 }
-
 .hero__stack {
   gap: 0.5rem;
   width: 5rem;
-  height: 5rem;
   padding: 1rem;
   align-self: center;
   background-color: #010101;
   border-radius: 15px;
+  border: 1px solid white;
 }
-
-.hero__stack svg {
-  width: 100%;
-  height: 100%;
-}
-
 .hero__about {
   background-color: #010101;
   border: 1px solid white;
@@ -137,12 +118,10 @@
   flex-direction: row;
   gap: 4rem;
 }
-
 .hero__about img {
   width: 300px;
   height: auto;
 }
-
 .hero__about p {
   margin: auto;
 }
@@ -168,19 +147,16 @@
     margin: auto;
   }
 }
-
 .skills {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 270px 0;
 }
-
 .skills__text {
   width: 50%;
   padding: 3rem;
 }
-
 .skills__text h4 {
   font-family: "IBM Plex Mono", monospace;
   background-color: #010101;
@@ -190,27 +166,22 @@
   width: fit-content;
   padding: 0.4rem 2rem;
 }
-
 .skills__text h2 {
   font-family: "futurespore";
   font-weight: 600;
   font-size: 40px;
   padding: 1rem 0;
 }
-
 .skills__text p {
   padding: 1rem 0;
 }
-
 .skills__text span {
   padding: 1rem 0;
 }
-
 .skills__text a {
   color: #9336B4;
   font-weight: 600;
 }
-
 .skills__stack {
   width: 50%;
   padding: 3rem 0;
@@ -222,7 +193,6 @@
   grid-template-rows: repeat(3, 80px);
   grid-template-areas: ". . git . ." ". html js css ." "java spring sass hibernate mysql";
 }
-
 .skills__stack img {
   border-radius: 15px;
   background-color: #9336B4;
@@ -231,7 +201,6 @@
   padding: 0.5rem;
   height: auto;
 }
-
 .skills__stack svg {
   border-radius: 15px;
   background-color: #9336B4;
@@ -240,39 +209,30 @@
   padding: 0.5rem;
   height: auto;
 }
-
 .skills__stack-html {
   grid-area: html;
 }
-
 .skills__stack-css {
   grid-area: css;
 }
-
 .skills__stack-sass {
   grid-area: sass;
 }
-
 .skills__stack-java {
   grid-area: java;
 }
-
 .skills__stack-spring {
   grid-area: spring;
 }
-
 .skills__stack-hibernate {
   grid-area: hibernate;
 }
-
 .skills__stack-mysql {
   grid-area: mysql;
 }
-
 .skills__stack-git {
   grid-area: git;
 }
-
 .skills__stack-js {
   grid-area: js;
 }
@@ -293,18 +253,15 @@
     width: 100%;
   }
 }
-
 .projects {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding: 3rem;
 }
-
 .projects__title {
   text-align: center;
 }
-
 .projects__title h4 {
   font-family: "IBM Plex Mono", monospace;
   background-color: #010101;
@@ -315,7 +272,6 @@
   padding: 0.4rem 2rem;
   margin: auto;
 }
-
 .projects__title h2 {
   font-family: "futurespore";
   font-weight: 600;
@@ -323,20 +279,17 @@
   padding: 1rem 0 0 0;
   margin: auto;
 }
-
 .projects__nav {
   margin: auto;
   display: flex;
   flex: row;
   gap: 2rem;
 }
-
 .projects__nav a:hover {
   color: #9336B4;
   font-weight: 600;
   transition: color ease 400ms;
 }
-
 .projects__cards {
   display: flex;
   flex-direction: row;
@@ -344,7 +297,6 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
-
 .projects__card {
   border: 1px solid white;
   position: relative;
@@ -352,7 +304,6 @@
   width: 350px;
   height: 420px;
 }
-
 .projects__card-text {
   background-color: #010101;
   border: 1px solid white;
@@ -372,12 +323,10 @@
   width: 350px;
   height: 420px;
 }
-
 .projects__card-text:hover {
   opacity: 1;
   transition: 400ms;
 }
-
 .projects__card-text .projects__card-links {
   margin: auto;
   display: flex;
@@ -385,22 +334,28 @@
   gap: 2rem;
   justify-content: center;
 }
-
 .projects__card-text .projects__card-links svg {
   width: 40px;
   height: 40px;
 }
-
 .projects__card-text h3 {
   font-family: "IBM Plex Mono", monospace;
   color: #9336B4;
 }
-
+.projects__card-text h5 {
+  display: inline-block;
+  width: max-content;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  color: #FFFFFF;
+  background-color: #9336B4;
+  border-radius: 15px;
+  border: 1px solid white;
+}
 .projects__card-text span {
   font-size: 13px;
   color: grey;
 }
-
 .projects img {
   border-radius: 30px;
   width: 100%;
@@ -416,13 +371,11 @@
   background: url(../imagenes/fondo_bw.png) no-repeat bottom;
   background-size: contain;
 }
-
 .footer img {
   margin: auto;
   width: 30px;
   height: 30px;
 }
-
 .footer span {
   margin: auto;
 }
