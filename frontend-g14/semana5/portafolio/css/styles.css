@@ -106,7 +106,6 @@
   align-self: center;
   background-color: #010101;
   border-radius: 15px;
-  border: 1px solid white;
 }
 .hero__about {
   background-color: #010101;
@@ -191,7 +190,6 @@
   align-content: center;
   grid-template-columns: repeat(5, 80px);
   grid-template-rows: repeat(3, 80px);
-  grid-template-areas: ". . git . ." ". html js css ." "java spring sass hibernate mysql";
 }
 .skills__stack img {
   border-radius: 15px;
@@ -208,33 +206,6 @@
   border: 1px solid white;
   padding: 0.5rem;
   height: auto;
-}
-.skills__stack-html {
-  grid-area: html;
-}
-.skills__stack-css {
-  grid-area: css;
-}
-.skills__stack-sass {
-  grid-area: sass;
-}
-.skills__stack-java {
-  grid-area: java;
-}
-.skills__stack-spring {
-  grid-area: spring;
-}
-.skills__stack-hibernate {
-  grid-area: hibernate;
-}
-.skills__stack-mysql {
-  grid-area: mysql;
-}
-.skills__stack-git {
-  grid-area: git;
-}
-.skills__stack-js {
-  grid-area: js;
 }
 
 @media (max-width: 920px) {
